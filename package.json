@@ -1,0 +1,23 @@
+{
+  "name": "form-dynamo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IshanLahiru/form-dynamo.git"
+  },
+  "author": "Ishan Lahiru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IshanLahiru/form-dynamo/issues"
+  },
+  "homepage": "https://github.com/IshanLahiru/form-dynamo#readme",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
