@@ -1,0 +1,30 @@
+{
+  "name": "core",
+  "version": "1.0.0",
+  "description": "the core of the form-dynamo",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IshanLahiru/form-dynamo.git"
+  },
+  "keywords": [
+    "form-dynamo/core"
+  ],
+  "author": "Ishan Lahiru",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IshanLahiru/form-dynamo/issues"
+  },
+  "homepage": "https://github.com/IshanLahiru/form-dynamo#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rimraf": "^5.0.5"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.3"
+  }
+}
