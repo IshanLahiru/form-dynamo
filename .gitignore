@@ -130,5 +130,4 @@ dist
 .pnp.*
 
 # custom
-*.html
 .turbo
