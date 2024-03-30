@@ -1,1 +1,1 @@
-export * from './src/formDynamo';
+export * from './packages/core/src/formDynamo';
