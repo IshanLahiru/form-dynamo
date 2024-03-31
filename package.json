@@ -21,14 +21,12 @@
   },
   "homepage": "https://github.com/IshanLahiru/form-dynamo#readme",
   "devDependencies": {
-    "@types/react": "^18.2.69",
-    "rimraf": "^3.0.2",
+    "turbo": "latest",
     "typescript": "^5.3.3"
   },
-  "dependencies": {
-    "antd": "^5.15.3",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "rimraf": "^5.0.5"
+  "workspaces": ["packages/*"],
+  "packageManager": "npm@10.2.3",
+  "engines": {
+    "node": ">=18"
   }
 }
