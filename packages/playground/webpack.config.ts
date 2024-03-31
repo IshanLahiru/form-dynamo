@@ -1,6 +1,17 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import path from 'path';
-import { Configuration } from 'webpack';
+import type { Configuration } from 'webpack';
+import type { Configuration as DevServerConfiguration } from 'webpack-dev-server';
+
+const devServer: DevServerConfiguration = {
+  static: {
+    directory: path.join(__dirname, 'public'),
+  },
+  historyApiFallback: true,
+  compress: true,
+  open: true,
+  port: 9000,
+};
 
 const config: Configuration = {
   entry: './src/index.tsx',
@@ -26,11 +37,8 @@ const config: Configuration = {
       },
     ],
   },
+  devServer,
   mode: 'development',
-  devServer: {
-    historyApiFallback: true,
-    port: 9000,
-  },
   devtool: 'source-map',
   plugins: [
     new HtmlWebpackPlugin({
