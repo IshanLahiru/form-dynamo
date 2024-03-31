@@ -8,3 +8,4 @@ You can install the Dynamic Form Generator library using npm:
 
 ```bash
 npm install dynamic-form-generator
+```

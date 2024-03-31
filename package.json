@@ -24,9 +24,15 @@
     "turbo": "latest",
     "typescript": "^5.3.3"
   },
-  "workspaces": ["packages/*"],
+  "workspaces": [
+    "packages/*"
+  ],
   "packageManager": "npm@10.2.3",
   "engines": {
     "node": ">=18"
+  },
+  "dependencies": {
+    "prettier": "^3.2.5",
+    "prettier-plugin-organize-imports": "^3.2.4"
   }
 }
