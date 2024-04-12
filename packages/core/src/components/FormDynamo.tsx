@@ -1,5 +1,11 @@
 import { useEffect, useState } from 'react';
 
+export interface FormProps {
+  Schema: Record<string, unknown>;
+  formData: Record<string, unknown>;
+  readonly?: boolean;
+}
+
 const FormDynamo = () => {
   const [formData, setFormData] = useState({
     firstName: '',
