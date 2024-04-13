@@ -132,3 +132,7 @@ dist
 # custom
 .turbo
 *storybook.log
+
+# Ignore Storybook build output
+storybook-static/
+.storybook-gh-pages/
