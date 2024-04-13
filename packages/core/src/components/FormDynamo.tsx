@@ -6,7 +6,7 @@ export interface FormProps {
   readonly?: boolean;
 }
 
-const FormDynamo = () => {
+const Form = () => {
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -125,4 +125,4 @@ const FormDynamo = () => {
   );
 };
 
-export default FormDynamo;
+export default Form;
