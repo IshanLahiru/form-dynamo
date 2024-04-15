@@ -15,6 +15,12 @@ importers:
         specifier: ^3.2.4
         version: 3.2.4(prettier@3.2.5)(typescript@5.4.5)
     devDependencies:
+      pnpm:
+        specifier: ^8.15.7
+        version: 8.15.7
+      rimraf:
+        specifier: ^5.0.5
+        version: 5.0.5
       turbo:
         specifier: latest
         version: 1.13.2
@@ -7684,6 +7690,12 @@ packages:
     engines: {node: '>=14.16'}
     dependencies:
       find-up: 6.3.0
+    dev: true
+
+  /pnpm@8.15.7:
+    resolution: {integrity: sha512-yFzSG22hAzIVaxyiqnnAph7nrS6wRTuIqymSienoypPmCRIyslwHy/YfbfdxKNnISeXJrG5EhU29IRxJ86Z63A==}
+    engines: {node: '>=16.14'}
+    hasBin: true
     dev: true
 
   /polished@4.3.1:

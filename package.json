@@ -9,7 +9,9 @@
     "dev": "turbo run dev",
     "build": "turbo run build",
     "clean": "turbo run clean && rm -rf node_modules",
-    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\" --ignore-path .gitignore"
+    "refresh-node-modules": "rimraf packages/*/node_modules && rimraf node_modules && pnpm install",
+    "format": "prettier --write .",
+    "publish": "pnpm publish --access public"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,8 @@
   },
   "homepage": "https://github.com/IshanLahiru/form-dynamo#readme",
   "devDependencies": {
+    "pnpm": "^8.15.7",
+    "rimraf": "^5.0.5",
     "turbo": "latest",
     "typescript": "^5.3.3"
   },
