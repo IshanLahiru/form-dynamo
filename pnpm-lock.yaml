@@ -58,6 +58,12 @@ importers:
       '@storybook/test':
         specifier: ^8.0.8
         version: 8.0.8(jest@29.7.0)
+      '@types/react':
+        specifier: ^18.2.78
+        version: 18.2.78
+      '@types/react-dom':
+        specifier: ^18.2.23
+        version: 18.2.25
       jest:
         specifier: ^29.7.0
         version: 29.7.0
