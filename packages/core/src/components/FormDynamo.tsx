@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 
 export interface FormProps {
-  Schema: Record<string, unknown>;
-  formData: Record<string, unknown>;
+  Schema?: Record<string, unknown>;
+  formData?: Record<string, unknown>;
   readonly?: boolean;
 }
 
-const Form = () => {
+const Form:any = () => {
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -35,7 +35,7 @@ const Form = () => {
     }
   }, [formData, formSubmitted]);
 
-  const handleChange = (e) => {
+  const handleChange = (e:any) => {
     const { name, value } = e.target;
     setFormData((prevFormData) => ({
       ...prevFormData,
@@ -49,7 +49,7 @@ const Form = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e:any) => {
     e.preventDefault();
     // Form validation
     let isValid = true;

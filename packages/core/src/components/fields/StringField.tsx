@@ -6,7 +6,7 @@ interface SingleFieldProps {
   onChange: (value: string) => void;
   error: string;
 }
-export default function StringField(props: SingleFieldProps) {
+export default function StringFields(props: SingleFieldProps) {
   return (
     <div>
       <label htmlFor={props.id}>{props.title}</label>
