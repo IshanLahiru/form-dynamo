@@ -24,17 +24,17 @@ const config: StorybookConfig = {
     options: {
       builder: {
         useSWC: true,
-      }
+      },
     },
   },
   swc: () => ({
     jsc: {
       transform: {
         react: {
-          runtime: 'automatic'
-        }
-      }
-    }
+          runtime: 'automatic',
+        },
+      },
+    },
   }),
   docs: {
     autodocs: 'tag',

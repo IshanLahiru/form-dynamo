@@ -35,7 +35,7 @@ export default function Form(props: FormProps) {
     }
   }, [formData, formSubmitted]);
 
-  const handleChange = (e:any) => {
+  const handleChange = (e: any) => {
     const { name, value } = e.target;
     setFormData((prevFormData) => ({
       ...prevFormData,
@@ -49,7 +49,7 @@ export default function Form(props: FormProps) {
     }));
   };
 
-  const handleSubmit = (e:any) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     // Form validation
     let isValid = true;
@@ -123,4 +123,4 @@ export default function Form(props: FormProps) {
       <button type="submit">Submit</button>
     </form>
   );
-};
+}

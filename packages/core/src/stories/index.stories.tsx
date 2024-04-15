@@ -10,5 +10,5 @@ export default meta;
 type Story = StoryObj<typeof Form>;
 
 export const FormComponent: Story = {
-  render: (args) => <Form {...args}/>,
+  render: (args) => <Form {...args} />,
 };
