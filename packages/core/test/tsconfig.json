@@ -11,8 +11,8 @@
     {
       "path": "../src"
     },
-    {
-      "path": "../../snapshot-tests"
-    }
+    // {
+    //   "path": "../../snapshot-tests"
+    // }
   ]
 }
