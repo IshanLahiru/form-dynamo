@@ -4,6 +4,7 @@
   "description": "the core of the form-dynamo",
   "main": "index.ts",
   "scripts": {
+    "build": "pnpm run build",
     "dev": "echo \" no dev specified\"",
     "test": "echo \" no test specified\"",
     "storybook": "storybook dev -p 6006",
