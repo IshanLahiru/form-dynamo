@@ -6,7 +6,7 @@ export interface FormProps {
   readonly?: boolean;
 }
 
-const Form:any = () => {
+export default function Form(props: FormProps) {
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -124,5 +124,3 @@ const Form:any = () => {
     </form>
   );
 };
-
-export default Form;
