@@ -1,5 +1,31 @@
 {
   "title": "the title",
   "description": "the description",
-  "type": "object"
+  "type": "object",
+  "properties":{
+    "name": {
+      "type": "string",
+      "description": "the name"
+    },
+    "age": {
+      "type": "integer",
+      "description": "the age"
+    },
+    "component-Wrapper":{
+      "year":{
+        "type": "integer",
+        "description": "the year"
+      },
+      "month":{
+        "type": "integer",
+        "description": "the month"
+      },
+      "date":{
+        "type": "integer",
+        "description": "the date"
+
+      }
+    }
+
+  }
 }
