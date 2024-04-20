@@ -11,6 +11,10 @@
       "type": "integer",
       "description": "the age"
     },
+    "date": {
+      "type": "date",
+      "description": "the date"
+    },
     "component-Wrapper":{
       "year":{
         "type": "integer",
