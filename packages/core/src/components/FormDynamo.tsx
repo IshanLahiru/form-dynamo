@@ -72,7 +72,8 @@ export default function Form(props: FormProps) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <div className='container'>
+      <form onSubmit={handleSubmit}>
       <div>
         <label htmlFor="firstName">First Name:</label>
         <input
@@ -122,5 +123,6 @@ export default function Form(props: FormProps) {
       </div>
       <button type="submit">Submit</button>
     </form>
+    </div>
   );
 }
