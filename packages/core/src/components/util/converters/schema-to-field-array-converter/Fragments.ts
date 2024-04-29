@@ -26,3 +26,14 @@ enum componentFragments {
   table = 'table',
   container = 'container',
 }
+
+interface inputProps {
+  title?: string;
+  type?: componentFragments;
+  description?: string;
+  value?: string;
+  placeholder?: string;
+  required?: boolean;
+  readonly?: boolean;
+  enableMarkdownInDescription?: boolean;
+}
