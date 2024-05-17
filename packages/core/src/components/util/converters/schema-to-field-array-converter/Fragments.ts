@@ -1,4 +1,4 @@
-enum componentFragments {
+export enum componentFragments {
   button = 'button',
   checkbox = 'checkbox',
   color = 'color',
@@ -27,7 +27,7 @@ enum componentFragments {
   container = 'container',
 }
 
-interface inputProps {
+export interface inputProps {
   title?: string;
   type?: componentFragments;
   description?: string;
