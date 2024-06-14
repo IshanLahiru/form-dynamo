@@ -1,43 +1,20 @@
 {
   "name": "form-dynamo",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "turbo run dev",
-    "build": "turbo run build",
-    "clean": "turbo run clean && rm -rf node_modules",
-    "refresh-node-modules": "rimraf packages/*/node_modules && rimraf node_modules && pnpm install",
-    "format": "prettier --write .",
-    "publish": "pnpm publish --access public"
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md,json}\""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/IshanLahiru/form-dynamo.git"
-  },
-  "author": "Ishan Lahiru",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/IshanLahiru/form-dynamo/issues"
-  },
-  "homepage": "https://github.com/IshanLahiru/form-dynamo#readme",
   "devDependencies": {
-    "pnpm": "^8.15.7",
-    "rimraf": "^5.0.5",
+    "prettier": "^3.2.5",
+    "prettier-plugin-organize-imports": "^3.2.4",
     "turbo": "latest",
-    "typescript": "^5.3.3"
+    "typescript": "^5.4.5"
   },
-  "workspaces": [
-    "packages/*"
-  ],
-  "packageManager": "npm@10.2.3",
+  "packageManager": "pnpm@8.15.6",
   "engines": {
     "node": ">=18"
-  },
-  "dependencies": {
-    "prettier": "^3.2.5",
-    "prettier-plugin-organize-imports": "^3.2.4"
   }
 }

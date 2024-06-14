@@ -1,4 +1,3 @@
-import React from 'react';
 interface StringFieldProps {
   id: string;
   name: string;

@@ -10,8 +10,8 @@ export default function Form(props: FormProps) {
   const [fieldArray, setFieldArray] = useState<Record<string, unknown>[]>([]);
   useEffect(() => {
     if (props.Schema) {
-      console.log('the schema is: ',props.Schema);
-      schemaConverter(props.Schema);
+      console.log('the schema is: ', props.Schema);
+      //schemaConverter(props.Schema);
     }
   }, [props]);
 

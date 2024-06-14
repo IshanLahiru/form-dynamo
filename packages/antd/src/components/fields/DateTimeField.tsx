@@ -1,4 +1,3 @@
-import React from 'react';
 import { DatePicker, Form } from 'antd';
 import moment from 'moment';
 
@@ -22,7 +21,9 @@ export default function DateTimeField(props: DateTimeFieldProps) {
         id={props.id}
         name={props.name}
         value={props.formData ? moment(props.formData) : null}
-        onChange={(value) => props.onChange(value ? value.format('YYYY-MM-DDTHH:mm') : '')}
+        onChange={(value) =>
+          props.onChange(value ? value.format('YYYY-MM-DDTHH:mm') : '')
+        }
         showTime
       />
     </Form.Item>
