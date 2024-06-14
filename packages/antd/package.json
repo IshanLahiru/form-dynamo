@@ -1,0 +1,55 @@
+{
+  "name": "@form-dynamo/antd",
+  "version": "0.0.1",
+  "description": "the implementation of the form-dynamo using antd ui library",
+  "main": "index.ts",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "build": "pnpm run build",
+    "dev": "echo \" no dev specified\"",
+    "test": "echo \" no test specified\"",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IshanLahiru/form-dynamo.git"
+  },
+  "keywords": [
+    "form-dynamo/antd"
+  ],
+  "author": "Ishan Lahiru",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IshanLahiru/form-dynamo/issues"
+  },
+  "homepage": "https://github.com/IshanLahiru/form-dynamo#readme",
+  "dependencies": {
+    "antd": "^5.18.1",
+    "moment": "^2.30.1",
+    "rimraf": "^5.0.5"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.5.0",
+    "@storybook/addon-essentials": "^8.1.9",
+    "@storybook/addon-interactions": "^8.1.9",
+    "@storybook/addon-links": "^8.1.9",
+    "@storybook/addon-onboarding": "^8.1.9",
+    "@storybook/addon-webpack5-compiler-swc": "^1.0.3",
+    "@storybook/blocks": "^8.1.9",
+    "@storybook/react": "^8.1.9",
+    "@storybook/react-webpack5": "^8.1.9",
+    "@storybook/test": "^8.1.9",
+    "@types/react": "^18.2.78",
+    "@types/react-dom": "^18.2.23",
+    "pnpm": "^8.15.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-portal": "^4.2.2",
+    "storybook": "^8.1.9",
+    "typescript": "^5.4.3"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  }
+}
