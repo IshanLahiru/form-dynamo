@@ -1,3 +1,7 @@
+import React from 'react';
+import { DatePicker, Form } from 'antd';
+import moment from 'moment';
+
 interface DateTimeFieldProps {
   id: string;
   name: string;
@@ -9,17 +13,18 @@ interface DateTimeFieldProps {
 
 export default function DateTimeField(props: DateTimeFieldProps) {
   return (
-    <div>
-      <label htmlFor={props.id}>{props.title}</label>
-      <input
-        type="datetime-local"
+    <Form.Item
+      label={props.title}
+      validateStatus={props.error ? 'error' : ''}
+      help={props.error}
+    >
+      <DatePicker
         id={props.id}
         name={props.name}
-        value={props.formData}
-        onChange={(e) => props.onChange(e.target.value)}
-        required
+        value={props.formData ? moment(props.formData) : null}
+        onChange={(value) => props.onChange(value ? value.format('YYYY-MM-DDTHH:mm') : '')}
+        showTime
       />
-      {props.error && <div>{props.error}</div>}
-    </div>
+    </Form.Item>
   );
 }

@@ -1,4 +1,5 @@
-interface SingleFieldProps {
+import React from 'react';
+interface StringFieldProps {
   id: string;
   name: string;
   title: string;
@@ -6,7 +7,7 @@ interface SingleFieldProps {
   onChange: (value: string) => void;
   error: string;
 }
-export default function StringFields(props: SingleFieldProps) {
+export default function StringFields(props: StringFieldProps) {
   return (
     <div>
       <label htmlFor={props.id}>{props.title}</label>
