@@ -1,3 +1,4 @@
+import React from 'react';
 import { DatePicker, Form } from 'antd';
 import moment from 'moment';
 
@@ -10,22 +11,31 @@ interface DateTimeFieldProps {
   error: string;
 }
 
-export default function DateTimeField(props: DateTimeFieldProps) {
+const DateTimeField: React.FC<DateTimeFieldProps> = ({
+  id,
+  name,
+  title,
+  formData,
+  onChange,
+  error,
+}) => {
   return (
     <Form.Item
-      label={props.title}
-      validateStatus={props.error ? 'error' : ''}
-      help={props.error}
+      label={title}
+      validateStatus={error ? 'error' : ''}
+      help={error}
     >
       <DatePicker
-        id={props.id}
-        name={props.name}
-        value={props.formData ? moment(props.formData) : null}
+        id={id}
+        name={name}
+        value={formData ? moment(formData) : null}
         onChange={(value) =>
-          props.onChange(value ? value.format('YYYY-MM-DDTHH:mm') : '')
+          onChange(value ? value.format('YYYY-MM-DDTHH:mm') : '')
         }
         showTime
       />
     </Form.Item>
   );
-}
+};
+
+export default DateTimeField;
