@@ -1,3 +1,9 @@
+import React from 'react';
+<<<<<<< Updated upstream
+=======
+import { Input, Form } from 'antd';
+
+>>>>>>> Stashed changes
 interface StringFieldProps {
   id: string;
   name: string;
@@ -6,19 +12,31 @@ interface StringFieldProps {
   onChange: (value: string) => void;
   error: string;
 }
-export default function StringFields(props: StringFieldProps) {
+
+const StringField: React.FC<StringFieldProps> = ({
+  id,
+  name,
+  title,
+  formData,
+  onChange,
+  error,
+}) => {
   return (
-    <div>
-      <label htmlFor={props.id}>{props.title}</label>
-      <input
+    <Form.Item
+      label={title}
+      validateStatus={error ? 'error' : ''}
+      help={error}
+    >
+      <Input
         type="text"
-        id={props.id}
-        name={props.name}
-        value={props.formData}
-        onChange={(e) => props.onChange(e.target.value)}
+        id={id}
+        name={name}
+        value={formData}
+        onChange={(e) => onChange(e.target.value)}
         required
       />
-      {props.error && <div>{props.error}</div>}
-    </div>
+    </Form.Item>
   );
-}
+};
+
+export default StringField;

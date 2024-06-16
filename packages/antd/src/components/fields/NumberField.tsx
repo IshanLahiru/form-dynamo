@@ -1,4 +1,5 @@
 import React from 'react';
+import { InputNumber, Form } from 'antd';
 
 interface NumberFieldProps {
   id: string;
@@ -9,28 +10,34 @@ interface NumberFieldProps {
   error: string;
 }
 
-export default function NumberField(props: NumberFieldProps) {
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value;
-    if (!isNaN(Number(value))) {
-      props.onChange(Number(value));
-    } else {
-      props.onChange(value);
+const NumberField: React.FC<NumberFieldProps> = ({
+  id,
+  name,
+  title,
+  formData,
+  onChange,
+  error,
+}) => {
+  const handleChange = (value: number | string | null) => {
+    if (value !== null) {
+      onChange(value);
     }
   };
 
   return (
-    <div>
-      <label htmlFor={props.id}>{props.title}</label>
-      <input
-        type="number"
-        id={props.id}
-        name={props.name}
-        value={props.formData}
+    <Form.Item
+      label={title}
+      validateStatus={error ? 'error' : ''}
+      help={error}
+    >
+      <InputNumber
+        id={id}
+        name={name}
+        value={typeof formData === 'number' ? formData : Number(formData)}
         onChange={handleChange}
-        required
       />
-      {props.error && <div>{props.error}</div>}
-    </div>
+    </Form.Item>
   );
-}
+};
+
+export default NumberField;

@@ -1,7 +1,4 @@
 {
-  "eslint.workingDirectories": [
-    {
-      "mode": "auto"
-    }
-  ]
+  "cSpell.words": ["datetime"],
+  "editor.tabSize": 2
 }

@@ -1,9 +1,13 @@
 {
-  "extends": "../../tsconfig.base.json",
-  "files": [],
-  "references": [
-    {
-      "path": "./src"
-    }
-  ]
-}
+    "extends": "../../tsconfig.base.json",
+    "files": [],
+    "references": [
+      {
+        "path": "./src"
+      },
+      {
+        "path": "./test"
+      }
+    ]
+  }
+  

@@ -11,31 +11,20 @@ interface DateTimeFieldProps {
   error: string;
 }
 
-const DateTimeField: React.FC<DateTimeFieldProps> = ({
-  id,
-  name,
-  title,
-  formData,
-  onChange,
-  error,
-}) => {
+export default function DateTimeField(props: DateTimeFieldProps) {
   return (
     <Form.Item
-      label={title}
-      validateStatus={error ? 'error' : ''}
-      help={error}
+      label={props.title}
+      validateStatus={props.error ? 'error' : ''}
+      help={props.error}
     >
       <DatePicker
-        id={id}
-        name={name}
-        value={formData ? moment(formData) : null}
-        onChange={(value) =>
-          onChange(value ? value.format('YYYY-MM-DDTHH:mm') : '')
-        }
+        id={props.id}
+        name={props.name}
+        value={props.formData ? moment(props.formData) : null}
+        onChange={(value) => props.onChange(value ? value.format('YYYY-MM-DDTHH:mm') : '')}
         showTime
       />
     </Form.Item>
   );
-};
-
-export default DateTimeField;
+}
