@@ -1,9 +1,5 @@
 import React from 'react';
-<<<<<<< Updated upstream
-=======
 import { Input, Form } from 'antd';
-
->>>>>>> Stashed changes
 interface StringFieldProps {
   id: string;
   name: string;

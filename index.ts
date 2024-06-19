@@ -1,1 +1,1 @@
-export * from './packages/core/src/formDynamo';
+export * from './packages/antd/src/components/formDynamo';
