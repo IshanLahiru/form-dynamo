@@ -1,6 +1,6 @@
 import React from 'react';
 import { Input, Form } from 'antd';
-interface StringFieldProps {
+export interface StringFieldProps {
   id: string;
   name: string;
   title: string;

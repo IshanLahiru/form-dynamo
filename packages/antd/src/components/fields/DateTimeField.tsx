@@ -2,7 +2,7 @@ import React from 'react';
 import { DatePicker, Form } from 'antd';
 import moment from 'moment';
 
-interface DateTimeFieldProps {
+export interface DateTimeFieldProps {
   id: string;
   name: string;
   title: string;

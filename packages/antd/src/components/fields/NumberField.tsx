@@ -1,7 +1,7 @@
 import React from 'react';
 import { InputNumber, Form } from 'antd';
 
-interface NumberFieldProps {
+export interface NumberFieldProps {
   id: string;
   name: string;
   title: string;
